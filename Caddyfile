@@ -1,7 +1,7 @@
 # Caddyfile for manager.hazlosoftware.com
 
 manager.hazlosoftware.com {
-  # Serve built frontend (adjust path to where you place the build on the server)
+  # Serve built frontend 
   root * /var/www/manager/frontend/dist
   encode zstd gzip
 
