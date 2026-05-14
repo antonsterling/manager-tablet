@@ -134,6 +134,7 @@ const CloseIcon = Icons['X'] || Icons['XCircle'] || null;
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
+  align-items: center;
 }
 .ui-alert__icon {
   flex: 0 0 auto;

@@ -112,7 +112,7 @@ function onInput(e) {
 .ui-input__label {
   display: block;
   margin-bottom: 6px;
-  color: var(--color-muted);
+  color: var(--color-surface);
   font-size: var(--fs-sm);
 }
 
@@ -160,7 +160,7 @@ function onInput(e) {
 
 /* focus */
 .ui-input__wrap:focus-within {
-  box-shadow: 0 0 0 3px rgba(37,99,235,0.08);
+  box-shadow: 0 0 0 2px rgba(2, 2, 2, 0.4);
 }
 
 /* No aplicar efecto de 'press' — debe comportarse como un input normal.

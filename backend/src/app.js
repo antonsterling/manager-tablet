@@ -2,7 +2,7 @@ import express from 'express'
 import cors from 'cors'
 import dotenv from 'dotenv'
 import helmet from 'helmet'
-import db from './db/index.js'
+import apiRouter from './routes/api.js'
 
 dotenv.config()
 
@@ -24,20 +24,13 @@ app.use((req, res, next) => {
   next()
 })
 
-app.get('/api', (req, res) => {
+// Ruta raíz mínima
+app.get('/', (req, res) => {
   res.json({ message: 'Backend funcionando' })
 })
 
-// Health check for database connection
-app.get('/api/db-test', async (req, res) => {
-  try {
-    const result = await db.query('SELECT 1 FROM RDB$DATABASE', [])
-    res.json({ ok: true, result })
-  } catch (err) {
-    console.error('DB test error', err)
-    res.status(500).json({ ok: false, error: err.message })
-  }
-})
+// Montar todas las rutas de la API bajo /api (por ahora sólo /api/users)
+app.use('/api', apiRouter)
 
 // Generic error handler
 app.use((err, req, res, next) => {

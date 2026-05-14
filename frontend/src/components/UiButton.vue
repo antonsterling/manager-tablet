@@ -79,7 +79,7 @@ const colorMap = {
   edit: '#f59e0b',
   delete: '#ef4444',
   read: '#2563eb',
-  info: '#06b6d4'
+  info: '#c5c5c5'
 };
 
 const resolvedButtonColor = computed(() => {
@@ -150,7 +150,7 @@ const iconSize = computed(() => {
   --btn-edit: #f59e0b; /* ámbar */
   --btn-delete: #ef4444; /* rojo */
   --btn-read: #2563eb; /* azul (primario) */
-  --btn-info: #06b6d4; /* turquesa */
+  --btn-info: #c5c5c5; /* blanco */
 }
 
 .ui-btn {
@@ -212,6 +212,7 @@ const iconSize = computed(() => {
   color: #ffffff;
   border: none;
 }
+
 
 /* Las clases de variante mapean a variables CSS */
 .ui-btn--create { --btn-color: var(--btn-create); }
