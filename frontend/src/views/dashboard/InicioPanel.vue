@@ -206,7 +206,9 @@ const barOptions = {
   display: flex;
   gap: 20px;
   width: 100%;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02)
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .container-grafics {
@@ -216,7 +218,7 @@ const barOptions = {
   box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
   border: 1px solid rgba(15, 23, 42, 0.04);
   min-height: 360px;
-  width: 100%
+  width: 48%
 }
 
 .container-buttons {
@@ -233,6 +235,10 @@ const barOptions = {
     max-width: 90%;
     margin: 16px auto;
     padding: 4px;
+  }
+
+  .container-grafics {
+    width: 100%;
   }
 
 }

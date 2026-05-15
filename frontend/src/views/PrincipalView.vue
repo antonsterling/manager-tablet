@@ -43,8 +43,6 @@ function onContinue() {
 }
 
 .container-content {
-  background-color: rgb(247, 247, 247);
-  border-radius: 10px;
   padding: 20px;
   margin-top: 40px;
   display: flex;
