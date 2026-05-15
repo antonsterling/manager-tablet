@@ -2,6 +2,8 @@ import express from 'express'
 import usersRouter from './users.js'
 import graficsRouter from './grafic.js'
 import personRouteListRouter from './personRouteList.js'
+import otmProgramadaRouter from './otmProgamada.js'
+import otmCorrectivaRouter from './otmCorrectiva.js'
 
 const router = express.Router()
 
@@ -9,6 +11,8 @@ const router = express.Router()
 router.use('/users', usersRouter)
 router.use('/grafics', graficsRouter)
 router.use('/personRouteList', personRouteListRouter)
+router.use('/otmProgramada', otmProgramadaRouter)
+router.use('/otmCorrectiva', otmCorrectivaRouter)
 
 export default router
 
